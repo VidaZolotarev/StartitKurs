@@ -1,0 +1,306 @@
+/* General */
+*{
+	box-sizing: border-box;
+	font-family: 'Mirza', cursive;
+}
+
+*:focus {
+    outline: none;
+}
+
+h1,h2, h3{
+	font-family: 'Ubuntu', sans-serif;
+	text-align:center;
+}
+
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+body{
+	margin:0;
+	color:#242424;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+/* Header */
+
+header{
+	background: url("assets/images/gemma-evans.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	text-align: center;
+	overflow:hidden;
+	color:#ffffff;
+}
+
+header h1{
+	margin:20px 0;
+	font-size: 21px; 
+}
+
+header nav{
+	background-color:rgba(36, 36, 36, 0.8);
+}
+
+header nav ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+header nav li{
+	display: inline-block;
+	margin:25px 0;
+}
+
+header nav li a{
+	text-decoration: none;
+	color: #ffffff;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+
+header nav li:nth-child(2){
+	margin: 0 10px;
+}
+
+.active,
+header nav li a:hover{
+	border-bottom: 1px solid green;
+	opacity: 0.7;
+}
+
+/*1.  Portfolio */
+
+#main{
+	padding: 30px 10px;
+}
+
+article{
+	width:100%;
+	max-width: 600px;
+	margin:35px auto;
+	border: 1px solid #e1e1e1;
+	box-shadow: 0px 0px 10px #e09a41;
+	border-radius: 7px;
+	overflow:hidden;
+	background-color: rgba(218, 179, 129, 0.4);
+}
+
+article:hover{
+	box-shadow: 4px 4px 4px #777;
+	opacity: 0.9;
+}
+
+article img{
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.text{
+	padding: 10px;
+}
+
+.text h3 a{
+	text-decoration: none;
+	color:#242424;
+	margin:0;
+}
+.text h3 a:hover{
+	text-decoration: underline;
+	color:red;
+}
+
+/* 2. About Me */
+
+.about p{
+	padding: 20px;
+}
+
+.about h1{
+	margin: 30px 0;
+}
+
+.about img{
+	border-radius: 50%;
+	display: block;
+	max-width: 200px;
+	width: 100%;
+	margin: 50px auto;
+}
+
+
+/* 3. contact */
+
+
+.contact h1{
+	margin: 30px 0;
+}
+
+form,
+#adress{
+	background-color: rgba(255,255,255,.2);
+	width: 100%;
+	max-width:500px;
+	border-radius: 10px;
+	padding: 20px 10%;
+	margin:0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="submit"]{
+	width: 100%;
+	display: block;
+	margin:8px 0;
+	padding:12px;
+	border: none;
+	border-bottom: 1px solid rgba(64, 46, 64,.2);
+}
+
+input[type="submit"]{
+	background-color: #cd4243;
+	color:#ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	opacity: 0.7;
+	border-bottom: 1px solid green;
+}
+
+#adress ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+#adress ul li span {
+	margin-right: 10px;
+}
+
+#envelope{
+	font-size: 14px;
+}
+
+/* footer */
+
+footer{
+	background-color: #242424;
+	color:#ffffff;
+	text-align: center;
+}
+
+footer p{
+	margin-bottom:0;
+	padding-bottom: 25px;
+}
+
+footer a span{
+	color:#ffffff;
+	margin-top: 25px;
+}
+
+footer a:nth-child(2){
+	margin:0 12px;
+}
+
+footer a span:hover{
+	color: rgba(255, 0, 0, 0.3);
+	border-bottom: 1px solid green;
+}
+
+
+/* Media Queries */
+
+
+@media screen and (min-width: 960px) {
+
+
+	header{
+		text-align:initial;
+	}
+
+	header h1{
+		display: inline-block;
+		margin-top: 29px;
+		margin-left: 10px;
+	}
+
+	header nav{
+		float: right;
+		background-color: transparent;
+		margin-right: 10px;
+	}
+/* portfolio */
+	article{
+		width:32%;
+		display: inline-block;
+	}
+
+	article:nth-child(2),
+	article:nth-child(5) {
+		margin-left: 1.6%;
+		margin-right: 1.6%;
+	}
+
+/* About me */
+
+	.about{
+		width: 100%;
+		max-width: 960px;
+		margin: 85px auto;
+		text-align: justify;
+	}
+
+	.about img{
+		margin:0 7% 8% 0;
+		float: left;
+	}
+
+	.about p{
+		max-width: 100%;
+	}
+	
+
+/* Contact */
+
+	.contact{
+		margin: 55px 0;
+	}
+
+	#form,
+	#adress{
+		display: inline-block;
+	}
+
+	#form{
+		width: 55%;
+	}	
+
+	#adress{
+		width: 40s%;
+		vertical-align: top;
+	}
+
+}
+
+
+@media screen and (min-width: 960px) and (max-width: 1045px){
+
+	article:nth-child(4){
+		margin-left: 1.6%;
+		margin-right: 1.6%;
+	}
+
+	article:nth-child(5){
+		margin:0;
+	}
+}

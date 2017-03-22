@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+body{
+	background:url(slika.jpg)center no-repeat;
+	background-size: cover;
+	font-family: 'Montserrat', sans-serif;
+	margin:0;
+	color: #ffffff;
+}
+
+/*Header*/
+header{
+	color: #ffffff;
+	margin-top: 0;
+	border-bottom: 1px solid #fff;
+  	text-align: center;
+  	
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 4% 4%;
+
+}
+
+nav ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+}
+nav ul li a:hover{
+	background-color: #ffffff;
+	color: #402e40;
+	padding:10px;
+	border-radius: 15px;
+}
+
+/* form */
+form{
+	background-color: rgba(255,255,255,.2);
+	width: 100%;
+	max-width:700px;
+	border-radius: 15px;
+	padding: 80px 10%;
+	margin:100px auto;
+	text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea{
+	width: 100%;
+	display: block;
+	margin:8px 0;
+	padding:12px;
+	border:none;
+	border-left: 2px solid #ffffff;
+	background-color: rgba(64, 46, 64, .4);
+	color:#ffffff;
+	/* dodala boju za text*/
+}
+
+label[for="s"],
+label[for="m"],
+label[for="l"]{
+	padding: 0 5%;
+}
+
+label[for="male"],
+label[for="female"]{
+	text-transform: lowercase;
+}
+
+input[type="submit"]{
+	padding: 15px 0;
+	border: none;
+	background-color: #402e40;
+	color:#ffffff;
+	width:120px;
+	border-radius: 15px;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 10px auto;
+}
+
+input[type="submit"]:hover{
+	border:1px solid #ffffff;
+}
+

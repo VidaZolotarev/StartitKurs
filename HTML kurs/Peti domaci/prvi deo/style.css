@@ -1,0 +1,144 @@
+*{
+	/*box-sizing: border-box;*/
+	color: #464646;
+	font-family: 'Abel', sans-serif;
+	letter-spacing: 1px;
+
+}
+.wrapper{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#slideOne{
+	margin:0 10px;
+	width:30%;
+	max-width: 300px;
+	height: 250px;
+	position: relative;
+	display: inline-block;
+	background:url("http://healthcoach.stylemixthemes.com/wp-content/uploads/2015/07/1_-min-795x544.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center, center;
+	}
+#slideTwo{
+	margin:0 10px;
+	width:30%;
+	max-width: 300px;
+	height: 250px;
+	position: relative;
+	display: inline-block;
+	background:url("http://healthcoach.stylemixthemes.com/wp-content/uploads/2015/07/2_-min-795x544.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center, center;
+	}
+#slideThree{
+	margin:0 10px;
+	width:30%;
+	max-width: 300px;
+	height: 250px;
+	position: relative;
+	display: inline-block;
+	background:url("http://healthcoach.stylemixthemes.com/wp-content/uploads/2015/06/3_-min-795x544.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center, center;
+	}
+
+.container{
+	width: 100%;
+	max-width: 350px;
+	height: 145px;
+	background-color: #ffffff;
+	position: relative;
+	top: 150px;
+	text-align: center;
+	display: inline-block;
+	border-bottom: 1px solid #efefef;
+
+}
+.container:hover{
+	box-shadow: 0px 0px 10px #888888;
+}
+.krug{
+	position:absolute;
+	top: -32px;
+	left: 97px;
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+img{
+	position: relative;
+	top: 22px;
+	width: 40px;
+}
+.text{
+	position: relative;
+	top:20px;
+}
+.text h3 a{
+	text-decoration: none;
+	color: #464646;
+}
+
+.text h3 a:hover{
+	color:#2ACD35;
+}
+button{
+	background-color: #2ACD35;
+	border-radius: 40px;
+	padding:12px 30px;
+	border:none;
+	cursor: pointer;
+}
+button a{
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
+}
+button:hover{
+	background-color: #888888;
+}
+
+@media screen and (max-width: 920px) {
+	#slideOne{
+	margin:30px 10px;
+	width:85%;
+	max-width: 700px;
+	height: 300px;
+}
+#slideTwo{
+	margin:30px 10px;
+	width:85%;
+	max-width: 700px;
+	height: 300px;
+}
+#slideThree{
+	margin:30px 10px;
+	width:85%;
+	max-width: 700px;
+	height: 300px;
+}
+
+
+.container{
+	width: 100%;
+	max-width: 700px;
+	height: 160px;
+	top: 160px;
+}
+.krug{
+	left: 40%;
+}
+
+}
+@media screen and (max-width: 480px) {
+.krug{
+	left:30%;
+}
+
+}

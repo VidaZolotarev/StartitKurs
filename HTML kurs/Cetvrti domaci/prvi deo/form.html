@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form - domaci</title>
+	<script src="https://use.fontawesome.com/7ca25e3edf.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Store</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<form action="#">
+		<h1>Join</h1>
+		<!--label izmenjen-->
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" placeholder="Jane Do">
+
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" placeholder="email@email.com">
+
+		<label for="date">Birthday</label>
+		<input type="date" name="date" id="date" placeholder="01.12.1999.">
+
+		<p>Gender:</p>
+		<input type="radio" name="gender" value="male" id="male">
+		<label for="male">Male</label>
+
+		<input type="radio" name="gender" value="female" id="female">
+		<label for="female">Female</label>
+
+		<p>Size:</p>
+		<input type="checkbox" name="size" value="s" id="s">
+		<label for="s">S</label>
+
+		<input type="checkbox" name="size" value="m" id="m">
+		<label for="m">M</label>
+
+		<input type="checkbox" name="size" value="l" id="l">
+		<label for="l">L</label>
+
+		<p>Comment:</p>
+		<textarea id="comment" rows="5" cols="30"></textarea>
+
+		<input type="submit" value="Send">
+	</form>
+</body>
+</html>

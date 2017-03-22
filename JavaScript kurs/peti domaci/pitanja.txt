@@ -1,0 +1,368 @@
+Razvoj softvera
+	1.	Opisati svakodnevni rad u timu na trenutnom poslu.
+
+	1.	Od koga se dobijaju zadaci, ko bira tehnologije, kako se biraju prioriteti zadataka i odre?uje veli?ina iteracije i sl.
+
+	2.	Iskustvo sa rešavanjem razlika u mišljenju i/ili pristupu u okviru tima.
+
+	2.	Opisati reprezentativan feature ili inženjersko rešenje na koje je kandidat ponosan.
+
+	3.	Opisati inženjersko rešenje koje je, iz ove perspektive, bilo prekomplikovano i neefikasno.
+
+	4.	Opisati sopstveni proces:
+
+	1.	Razvoja novog feature-a na osnovu korisni?kog zahteva.
+
+	2.	U?enja nove tehnologije.
+
+	5.	Design patterns:
+
+	1.	Objasniti motivaciju i implementaciju nekog od: AbstractFactory, Strategy, Proxy, Builder, Template method, Model-View-Controller, Subject-Observer, Chain-of-Responsibility, Command.
+
+	2.	Opisati reprezentativan primer iz nekog prethodnog projekta.
+
+	6.	Refaktorisanje:
+
+	1.	Motivacija i reprezentativni teorijski primeri.
+
+	2.	Opisati reprezentativan primer refaktorisanja u prethodnim projektima. Kakvi benefiti su ostvareni u tom procesu?
+
+	7.	Testiranje:
+
+	1.	Motivacija i osnovni principi. Gde se smeštaju unit testovi?
+
+	2.	Pokrivenost koda: koja je prava mera?
+
+	3.	Integracioni testovi: definicija, priprema testnih podataka, održavanje stanja.
+
+	4.	Mocking. Motivacija, slu?ajevi upotrebe, osvrt na implementaciju.
+
+	8.	Source control:
+
+	1.	Koje VCS je kandidat koristio?
+
+	2.	Šta su commit i update? Git: A Push i Pull? Pull request?
+
+	3.	Šta je branch i kada pravimo novi? Na koji na?in se vrši razvoj feature-a po branch-u.
+
+
+Baze podataka
+Koncepti baza podataka
+	1.	Transakcije:
+
+	1.	Objasniti begin/commit/rollback.
+
+	2.	Objasniti ACID (atomicity/consistency/isolation/durability).
+
+	3.	Objasniti nivoe izolacije: READ UNCOMMITED; READ COMMITED; SERIALIZABLE.
+
+	2.	Normalizacija.
+
+	3.	Primarni/Kandidat (business)/Strani klju?.
+
+	4.	Referencijalni integritet.
+
+	1.	Objasniti ON DELETE CASCADE.
+
+	5.	Vrste SQL JOIN-a: inner/left/right
+
+	6.	Agregacije. Objasniti GROUP BY/HAVING.
+
+	7.	Pogledi (views). ?emu služe, kako se koriste? 
+
+	1.	Dati primer iz predh. projekata.
+
+	2.	Objasniti WITH klauzulu.
+
+	8.	Indeksi:
+
+	1.	?emu služe, koje su prednosti a koje mane uvo?enja indeksa?
+
+	2.	Kako odrediti tabele/kolone na kojima uvesti indekse?
+
+	3.	Kako proveriti da li se indeksi koriste u upitima?
+
+	4.	Kako se indeksi principijelno implementiraju?
+
+Programiranje baza podataka
+	1.	Izvršenje SQL SELECT-a:
+
+	1.	Šta je to execution plan?
+
+	2.	Koji su ?esti koraci u planu?
+
+	3.	Kako možemo uticati na isti: 
+
+	1.	ako menjamo SQL
+
+	2.	ako SQL ostaje isti?
+
+	2.	Locking. Kada ga koristimo, koje su mane?
+
+	1.	Pessimistic vs optimistic locking.
+
+	3.	Kursori. Šta su, kakve su im performanse, primeri upotrebe.
+
+	4.	Na koji na?in bi identifikovao probleme sa nekim sporim SQL upitom?
+
+Tehnologije
+	1.	Oracle:
+
+	1.	Šta sve sadrži šema Oracle baze?
+
+	2.	Navesti neke korake Oracle execution plana: full table scan, index range scan. hash join, sort merge join, nested loops.
+
+	3.	Šta su to statistike tabele/šeme?
+
+	4.	Da li je kandidat ikada pratio neke parametre u Enterprise Manageru?
+
+	5.	Šta su to hint-ovi?
+
+
+Tehnologije
+Spring
+	1.	Dependency injection/Inversion of Control. Motivacija.
+
+	1.	Šta je Spring ApplicationContext?
+
+	2.	Gde se stavljaju @Component/Service/Repository anotacije? Zašto tu?
+
+	3.	Možemo li imati više implementacija istog interfejsa? Kako da ih razlikujemo na mestu ubacivanja (@Qualifier)?
+
+	4.	Dobre prakse kod velikih application-context fajlova.
+
+	2.	Bean scopes & lifecycle:
+
+	1.	Koji su podrazumevani bean scopes: singleton, prototype.
+
+	2.	Koje pravilo važi povodom držanja referenci izme?u bean-ova razli?itog scopea?
+
+	3.	Kako principijelno implementirati session scope?
+
+	4.	Kako posti?i dodatni korak inicijalizacije nekog Spring bean-a?
+
+	3.	Upravljanje transakcijama (@Transactional):
+
+	1.	Objasniti kako f-niše "deklerativna demarkacija transakcija"? Kako je implementirana; koji je to design pattern?
+
+	2.	Objasniti parametre @Transactional anotacije:
+
+	1.	propagation
+
+	2.	isolation
+
+	3.	(no)RollbackFor(ClassName)
+
+	3.	O ?emu se mora voditi ra?una prilikom lan?anog pozivanja transakcionih metoda u okviru istog bean-a?
+
+	4.	Aspektno programiranje (AOP):
+
+	1.	Šta je join point a šta pointcut?
+
+	2.	Šta je advice i koji su naj?eš?i tipovi istog: before, after, around?
+
+	1.	Koji nam omogu?ava da promenimo povratnu vrednost metoda?
+
+	3.	Implementacija: load-time weaving vs compile-time weaving.
+
+	4.	Objasniti razliku izme?u call i execution join point-a? Koji nije mogu?e implementirati ako se koristi LTW i zbog ?ega?
+
+	5.	Treba nam trag svih akcija koje je ulogovani korisnik izvršio, a koje menjaju nešto u bazi. Dati predlog implementacije.
+
+	6.	Treba nam da ograni?imo pristup nekom metodu do x puta/sec? Dati predlog implementacije.
+
+	5.	Testiranje (+JUnit):
+
+	1.	?emu služe @Before i @After anotacije JUnit-a?
+
+	2.	Kakvu podršku Spring nudi za integraciono testiranje?
+
+	3.	Kako posti?i da se u testu, u kontekstu, koristi druga?iji bean od produkcionog? Kada nam je tako nešto uopšte bitno?
+
+	4.	Kako verifikovati da metod koji testiramo baca izuzetak baš odre?enog tipa?
+
+	6.	JMS:
+
+	1.	Šta je queue a šta topic?
+
+	2.	Objasniti slede?e komponente Spring JMS-a:
+
+	1.	connection-factory
+
+	2.	producer
+
+	3.	container-listener
+
+	1.	Šta zna?i: acknowledge="transacted"
+
+	4.	message-converter
+
+	3.	Kako Spring "zna" da pozove odgovaraju?i metod nekog beana na prijemu JMS poruke?
+
+	4.	Šta je to redelivery-policy? 
+
+	5.	Kako testirati JMS komunikaciju?
+
+Hibernate/JPA
+	1.	Prednosti i mane ORM rešenja:
+
+	1.	Navesti po jedan primer dobre upotrebe, ali i problema sa tim izborom.
+
+	2.	Kakvi modeli podataka su pogodni za ORM?
+
+	3.	Za kakav model podataka ne bi upotrebio ORM?
+
+	2.	Opisati životni vek mapiranog entiteta (persistence lifecycle): new, persistent, detatched
+
+	3.	Mapiranja:
+
+	1.	Objasniti lazy fetch za @OneToMany i @ManyToOne.
+
+	2.	Kolekcija. 
+
+	1.	Zbog ?ega je bitno imati konzistentan hashCode/equals?
+
+	2.	Bidirekciono mapiranje. O ?emu se mora voditi ra?una u Java implementaciji?
+
+	3.	Kako Hibernate "zna" da generiše odgovaraju?i insert/update/delete na osnovu modifikovanih kolekcija.
+
+	3.	Nasle?ivanje. Navesti mogu?e strategije, koje su prednosti i mane svake.
+
+	4.	Fetch strategije: join/select/subselect? 
+
+	4.	Session/EntityManager - objasniti koncept i odnos prema DB transakciji. 
+
+	1.	Šta je flush, šta clear, i kada bi ih direktno pozvali?
+
+	5.	?esti problemi:
+
+	1.	Kako videti SQL koji Hibernate generiše?
+
+	2.	Šta je LazyInitializationException, kako dolazi do tog problema a kako se rešava?
+
+	3.	Šta je N+1 select problem i kako se rešava?
+
+	6.	Batch operacije - šta su i kada ih koristimo?
+
+	7.	Na koji na?in bi implementirao zahtev za pretragom po primeru (search by some fields)?
+
+
+
+Web/REST
+	1.	Objasniti HTTP request/response ciklus.
+
+	1.	Šta se dešava na pristup jednom URL-u? A na submit-ovanje forme?
+
+	2.	HTTP verbs: GET/POST/PUT/DELETE i još?
+
+	3.	HTTP header-i. Šta su i ?emu služe?
+
+	4.	AJAX. Objasniti pojam i navesti jedan primer implementacije iz prakse.
+
+	1.	Da li možemo da sa servera obavestimo klijent da je došlo do neke promene?
+
+	5.	REST. Objasniti pojam.
+
+	1.	Zašto REST a ne JAX-WS ili RMI?
+
+	2.	Dobre prakse u pisanju REST API-ja:
+
+	1.	Imena resursa.
+
+	2.	Izbor HTTP glagola.
+
+	3.	Izbor HTTP stanja.
+
+	4.	Obrada grešaka.
+
+	3.	Koje REST frameworke je kandidat koristio:
+
+	1.	Na serveru (Jersey, Spring MVC)
+
+	2.	Na klijentu (Jersey, Spring Template, REST easy).
+
+	4.	Dobre prakse pri konzumiranju REST sadržaja.
+
+	6.	?emu služi Web server?
+
+	1.	Šta su to servleti?
+
+	2.	Šta je to servlet filter? On predstavlja impl. kog design pattern-a.
+
+	3.	Kako server "zna" za korisnika koji mu pristupa?
+
+	4.	Da li je mogu?e imati 2 ili više Tomcat-a na istoj fizi?koj mašini? Šta je potrebno konfigurisati?
+
+	7.	Na koji na?in se može implementirati autentikacija na Webu? A za REST?
+
+
+Programerske prakse
+	1.	Immutabilty - opisati koncept i dati primere koriš?enja.
+
+	1.	Koje su immutable klase u Javi? Koje bi trebalo da budu?
+
+	2.	Strukture podataka
+
+	1.	Mape - varijante implementacije: hashing, tree
+
+	1.	Na koji na?in implementirati mapiranje više klju?eva u jednu vrednost?
+
+	1.	K1, K2 -> V
+
+	3.	Konkurentno programiranje
+
+	1.	Kriti?ne sekcije
+
+	1.	Objasniti synchronized
+
+	1.	Koji su loši kandidati za monitor?
+
+	2.	Šta je to Lock? Koje vrste Lock-ova postoje: ReadWrite/Reentrant?
+
+	2.	Asinhrono procesiranje
+
+	1.	Ako rezultat operacije može biti odre?en u nekom naknadnom trenutku, kako ga predajemo na naknadno izvršenje?
+
+	2.	Šta je to Executor(Service)?
+
+	3.	Šta je to Future?
+
+	4.	Šta je to thread group?
+
+	3.	Problemi kod pristupa deljenim strukturama podataka.
+
+	1.	ConcurrentHashMap
+
+	2.	BlockingQueue
+
+	4.	Šta je to ThreadLocal? Kada se koristi?
+
+	4.	Distribuirane transakcije
+
+	1.	Opisati problematiku i predložiti rešenja za omogu?avanje atomi?nosti 2 operacije na razdvojenim resursima.
+
+	2.	Konkretan primer: uplata tiketa i obaveštavanje Wallet servisa preko JMS-a.
+
+	5.	Keširanje
+
+	1.	Koji su "školski" slu?ajevi kada treba koristiti keširanje? Prednosti i mane?
+
+	2.	Šta je to invalidacija keša?
+
+	3.	Šta je to write-through keš?
+
+	4.	Navesti nekoliko cache implementacija koriš?enih u praksi i dati pregled njihovih mogu?nosti.
+
+	6.	Connection pooling
+
+	1.	Kada se koristi pooling, koje su prednosti tog pristupa? Navesti (bar) 2 primera: threads, database connections, JMS connections etc.
+
+	2.	O ?emu se mora voditi ra?una prilikom vra?anju objekata u pool?
+
+	3.	Navesti neki od gotovih DB pool-ova koji su koriš?eni na predh. projektima?
+
+	7.	Amortizacija optere?enja
+
+	1.	Dati predloge rešenja: queue/buffer, load balancing?
+
+	2.	Na koji na?in ograni?iti pristup nekom servisu na osnovu ukupnog optere?enja?

@@ -1,0 +1,120 @@
+*{
+font-family: 'Montserrat', sans-serif;
+box-sizing: border-box;
+}
+body{
+	background:url(jeff-sheldon.jpg);
+	background-size: cover;
+	margin:0;
+}
+
+/*header*/
+header,
+a
+{
+	text-transform: uppercase;
+	background-color: #f98b16;
+	color:#ffffff;
+	list-style:none;
+}
+
+nav{
+	float: right;
+}
+
+h1, 
+nav ul li {
+	display: inline-block;
+	padding: 10px 10px 0px 0px;
+}
+h1{
+	margin:0;
+	padding: 15px;
+}
+nav ul li a{
+	text-decoration: none;
+	padding: 15px;
+	letter-spacing: 2px;
+}
+a{
+	border:none;
+	text-decoration:none;
+	padding: 7px 9px;
+	background-color: #f2b065;
+	text-transform: uppercase;
+}
+ 
+a:hover{
+	border-bottom: 1px solid #ffffff;
+	background-color: #f98b16;
+}
+span{
+	color: #000000;
+}
+
+/* section */
+section{
+	margin: 30px auto;
+	background-color: #f2b065;
+	color: #ffffff;
+	width: 600px;
+	position: relative;
+	
+}
+section h1{
+	text-align:center;
+	padding-top: 20px;
+	display: block;
+
+}
+hr{
+	width: 560px;
+}
+#text{
+	display: inline-block;
+	padding:0 30px;
+	width: 300px;
+	text-align:justify;
+}
+
+#image{
+	position: absolute;
+	right: 30px;
+	top: 130px;
+	display: inline-block;
+
+	
+}
+/* table */
+table{
+	margin: 30px auto;
+	border-collapse: collapse;
+	width: 540px;
+
+	}
+td{
+	text-align: center;
+	padding:4px 7px;
+	border-bottom: 1px solid #ddd;
+
+}
+
+th{
+	background-color: #f98b16;
+}
+tr:hover{
+	background-color:#f78809;
+	color: #888888;
+}
+p{
+	text-transform: lowercase;
+	padding: 0 30px 10px;
+}
+/* footer */
+footer{
+	text-align: center;
+	background-color: #f98b16;
+	color: #ffffff;
+	padding: 30px 20px 40px 20px;
+	font-size: 23px;
+}

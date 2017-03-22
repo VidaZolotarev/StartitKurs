@@ -1,0 +1,104 @@
+body{
+	margin: 0;
+	font-family: Tahoma, sans-serif;
+	width: 100%;
+}
+
+header{
+	background:#343434;
+	padding:10px;
+	text-transform:uppercase;
+}
+
+h1{
+	float: center;
+	padding-left: 100px;
+	color:#ffffff;
+}
+
+img{
+	float: left;
+	background-color: #ffffff;
+	padding:0px;
+}
+
+.mission{
+	background:url("https://aos.iacpublishinglabs.com/question/e1648fa5426b91bd2ceb129e6db2e83f/aq/700px-394px/tigers-endangered_7aa80baa77b31ae2_BJmi1eSERPiXE1BWGa5vOA.jpg?domain=cx.aos.ask.com");
+	background-size: cover;
+	height:400px;
+	margin-bottom: 0;
+}
+
+h2{
+	clear:both;
+	margin-top:0;
+	color: #ffffff;
+	padding:100px;
+	margin-bottom: 0;
+}
+
+section{
+	display: block;
+	position: relative;
+	top:130px;
+	background-color: #343434;
+	padding: 20px;
+	text-align:center;
+	color: #ffffff;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+ul li a{
+	text-decoration:none;
+	color:#00000;
+	font-size:20px;
+}
+a{
+	color: #000000;
+}
+ul li a:hover{
+	color:#006666;
+}
+#goal{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:22px;
+	border:1px solid #343434;
+	background-color: #000000;
+	color:#ffffff;
+	padding: 20px;
+}
+footer{
+	position:relative;
+	display: inline-block;
+	top:130px;
+	background-color: #006666;
+	padding: 15px;
+	color: #343434;
+	width: 100%;
+	margin:0;
+}
+
+table{
+	width: 45%;
+	background-color: #d9d9d9;
+	float:left;
+	padding: 10px;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left; 
+    color: #343434;   
+
+}
+address{
+	text-align: center;
+	color:#ffffff;
+}

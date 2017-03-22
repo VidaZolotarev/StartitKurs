@@ -1,0 +1,145 @@
+/* general */
+*{
+	box-sizing: border-box;
+}
+/*   nav    */
+nav{
+	position: absolute;
+    top: initial;
+        width: 100%;
+    height: 70px;
+    z-index: 99;
+}
+
+nav.desctop #logo{
+	    background: url(https://slack.com/66f9/img/landing/header_logo_sprite.png) left top no-repeat;
+    background-size: 106px 60px;
+    height: 30px;
+    width: 106px;
+    float: left;
+    margin: 20px 0 0 1rem;
+}
+
+nav.desctop ul{
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    padding: 0;
+    float: right;
+    line-height: 4.375rem;
+
+}
+nav.desctop ul a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9375rem;
+    font-weight: 700;
+    margin-left: 9px;
+    position: relative;
+    cursor: pointer;
+    line-height: 1em;
+    padding: 8px 7px 9px;
+    border-radius: 5px;
+    opacity: .8;
+}
+
+nav.desctop ul a:hover {
+    opacity: 1;
+    background: rgba(0,0,0,.1);
+}
+
+/*  cover   */
+
+.cover{
+	width: 100%;
+    background-size: cover;
+    background-position: center top;
+    box-shadow: inset 0 0 2.125rem rgba(0,0,0,.2);
+    text-shadow: 0 0 1px rgba(0,0,0,.1);
+    padding: 4.25rem 0;
+    position: relative;
+}
+
+#store{
+    box-shadow: none;
+    height: calc(100vh - 155px);
+    max-height: inherit;
+    z-index: 1;
+    background-color: transparent;
+     width: 100%;
+    background-size: cover;
+    background-position: center top;
+    color: #fff;
+    font-size: 1.59rem;
+    box-shadow: inset 0 0 2.13rem rgba(0,0,0,.2);
+    text-shadow: 0 0 1px rgba(0,0,0,.1);
+    padding: 4.25rem 0;
+    position: relative;
+}
+.container{
+	    display: block;
+    position: absolute;
+    bottom: 3.61rem;
+    width: 100%;
+}
+.container h1{
+	font-size: 3.61rem;
+    line-height: 4.46rem;
+    font-weight: 900;
+    width: 950px;
+    text-align: center;
+    margin: 0 auto 2.65rem;
+    display: block;
+    position: relative;
+}
+
+.container-item{
+	    display: inline-block;
+    padding: 32px;
+    background: #EFF1F4;
+    border-radius: 8px;
+}
+
+.container-item .text{
+	    display: block;
+    font-size: 1.38rem;
+    line-height: 1.75rem;
+    margin: 40px auto 22px;
+    max-width: 869px;
+    padding: 0;
+    width: 100%;
+}
+
+.box{
+	    padding: 19px 48px;
+    background: rgba(174,180,180,.5);
+    display: inline-block;
+    padding: 32px;
+    background: #EFF1F4;
+    border-radius: 8px;
+}
+
+.box form{
+	    display: inline-block;
+	    vertical-align: middle;
+}
+
+.box p{
+	    font-size: .9375rem;
+    line-height: 1.375rem;
+    display: block;
+    text-align: center;
+    margin: 19px 0 0;
+    width: 100%;
+}
+
+/*  store-locator  */
+#store-locator{
+	font-size: .85rem;
+    line-height: 1.16rem;
+    position: absolute;
+    bottom: 1.06rem;
+    right: 1.59rem;
+        text-align: left;
+    padding: 0;
+}

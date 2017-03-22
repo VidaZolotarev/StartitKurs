@@ -1,0 +1,267 @@
+/* General */
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background:url("https://a.slack-edge.com/4030/img/wired/nasa-header-image.jpg");
+	background-position:top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	display: block;
+ 	
+}
+/* header */
+/* nav */
+
+#logo{
+	background: url("https://a.slack-edge.com/66f9/img/landing/header_logo_sprite.png");
+	background-size: cover;
+	background-position: left top;
+	background-size: 106px 60px;
+    height: 30px;
+    width: 106px;
+    float: left;
+    margin: 20px 0 0 16px;
+}
+
+nav.mobile{
+	display: none;
+}
+nav ul li{
+	display: inline-block;
+}
+
+nav ul{
+	float: right;
+	margin-top: 25px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+	font-weight: 600;
+	cursor: pointer;
+	margin-right: 10px;
+	padding: 9px 7px 9px;
+}
+
+nav ul li a:hover{
+	background-color: rgba(0,0,0, 0.1);
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+#sing-in{
+	border:2px solid rgba(255, 255, 255, 0.5);
+	opacity: 5;
+	padding: 9px 7px 9px;
+	border-radius: 5px;
+}
+
+#sing-in:hover{
+	background-color: transparent;
+	border-color: #ffffff;
+}
+
+.clear{
+	clear: both;
+}
+
+/* container */
+
+.container{
+	width: 100%;
+	position: absolute;
+	color: #ffffff;
+	text-align: center;
+}
+
+.container-item{
+	padding-top: 0;
+	max-width:869px;
+	margin:0px auto;
+}
+
+.text{
+    font-size: 22px;
+    margin: 40px auto 22px;
+    padding: 0;
+    width: 100%;
+}
+
+.container h1{
+	font-size: 58px;
+	margin-top: 176px;
+}
+
+.box{
+	display: inline-block;
+	padding: 19px 48px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 8px;
+}
+.box p{
+	font-size: 15px;
+    line-height: 22px;
+    margin: 19px 0 0;
+    color:#ffffff;
+}
+
+.box input[type="email"]{
+	margin-bottom: 0;
+    font-size: 20px;
+    padding: 13px;
+    width: 240px;
+    margin-right: 7px;
+    border-radius: 4px;
+    border:none;
+    }
+
+.box input[type="button"]{
+    line-height: 50px;
+    width: 184px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid #56b68b;
+    border-radius: 4px;
+    background: #56b68b;
+    color: #ffffff;
+}
+.box input[type="button"]:hover{
+	opacity: 0.9;
+}
+
+.box a{
+	color: #ffffff;
+}
+
+/* store loction */
+
+#store-location{
+	text-align: left;
+	float: right;
+	font-size: 14px;
+    line-height: 16px;
+    position: absolute;
+    right: 24px;
+    margin-top: 575px;
+    color: #ffffff;
+}
+
+#store-location a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#store-location strong{
+	font-weight: 900;
+	font-size: 15px;
+}
+
+#store-location span{
+	font-size: 15px;
+	margin-right: 5px;
+}
+#store-location a:hover{
+	text-decoration: underline;
+}
+
+/* footer */
+
+footer{
+	background-color: transparent;
+    border-top: 1px solid rgba(255,255,255, 0.1);
+    position: relative;jiuj
+    width: 100%;joi
+    margin:630px 0 0;
+    color: #9e9ea6;iyy
+    display: block;iy
+    padding: 40px 0 0;
+
+}
+footer .lista{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+footer .item{
+	display: inline-block;
+	width: 24%;
+	vertical-align: top;
+	margin:0;
+	padding:0 0 30px;
+	font-size: 13px;
+	line-height: 28px;
+}
+footer .lista .item li a:hover{
+	color: #ffffff;
+}
+
+footer .itemcic {
+	color:#ffffff;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+footer ul li{
+	list-style: none;
+}
+
+footer ul li a{
+	color: #8c8c94;
+	text-decoration: none;
+}
+
+.contact{
+	background-color: #1e1e1e;
+	overflow:hidden;
+}
+
+.contact .lista ul li{
+	display: inline-block;
+	list-style: none;
+}
+.contact .lista ul{
+	float: right;
+	margin-top: 18px
+}
+
+.contact .lista #img{
+	color: #ffffff;
+	font-size: 20px;
+    margin:18px 0;
+
+}
+.contact .lista ul li span{
+	font-size:20px;
+}
+.contact .lista ul a{
+	font-size: 14px;
+}
+.contact .lista ul li a:hover{
+	color: rgba(255, 255, 255, 0.2);
+}
+
+.contact .lista ul li:nth-child(2){
+	margin:0 10px 0;
+}
+
+@media screen and (max-width:765px ){
+
+/*   nav  */
+
+nav #desctop{
+	display: none;
+}
+nav .mobile{
+	display: initial;
+
+}
+
+}

@@ -1,0 +1,42 @@
+body{
+	margin:0;
+	padding: 0;
+	background: url("image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 700px;
+	font-family: 'Amiko', sans-serif;
+}
+div{
+	width: 100%;
+	max-width: 600px;
+	height: 500px;
+	margin: 50px auto;
+	background-color: rgba(0,0,0, 0.3);
+	border-radius: 5px;
+	text-align: center;
+}
+s
+#naslov{
+	padding: 40px 0;
+	color: #242424;
+	
+}
+h1{
+	color: #e1e1e1;
+	padding: 30px 0;
+}
+h2{
+	background-color: rgba(0,0,0, 0.3);
+	display: inline-block;
+	padding: 15px;
+	color: #ffffff;
+	border-radius: 15px;
+
+}
+
+h4{
+	display: inline-block;
+	font-family: 'Pangolin', cursive;
+}

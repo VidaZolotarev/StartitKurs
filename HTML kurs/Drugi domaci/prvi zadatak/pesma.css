@@ -1,0 +1,29 @@
+body{
+	margin:0;
+	width:100%;
+	text-align: center;
+	background:rgba(178, 34, 34, 0.2);
+}
+div.container {
+    width:95%;
+    background-color:#242424;
+}
+.box {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left:50px;
+}
+h1, h2{
+	text-transform: uppercase;
+	font-family: Tahoma, sans-serif;
+	text-align: center;
+	color: #b22222;
+}
+h1{
+	font-size: 28px;
+}
+p{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #b22222;
+}
